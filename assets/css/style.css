@@ -11,6 +11,7 @@
   padding: 0;
   color: #fff;
 }
+#logoa>img{width: 100%;height: 100%;}
 body {
   background-color: black;
 }
@@ -74,12 +75,12 @@ main > section:nth-child(2) > div {
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
-  padding-top: 15vh;
+  padding-top: 5vh;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4vh;
+  gap: 8vh;
 }
 .h1 {
   font-size: 9vh;
@@ -90,19 +91,14 @@ main > section:nth-child(2) > div {
 .cont1 {
   display: flex;
   width: 80%;
-  align-items: center;
   justify-content: center;
   gap: 2vw;
   margin-top: 3vh;
 }
-.cont1 > img {
-  height: 40vh;
-  border: 0.3vh solid #fff;
-  border-radius: 1.5vh;
-}
 .cont1 > p {
   text-align: right;
-  font-size: 5vh;
+  font-size: 2.5vw;
+  width: 50%;
 }
 #btn-pdb {
   background-color: rgba(0, 0, 0, 0);
@@ -112,13 +108,20 @@ main > section:nth-child(2) > div {
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
-  padding-right: 2vw;
+  padding: 1vw;
+  width: 25vw;
+  cursor: pointer;
+}
+#btn-pdb>img{
+  width: 20%;
+  height: 100%;
 }
 .in {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4vh;
+  
 }
 .row {
   display: flex;
@@ -153,6 +156,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3vh;
 }
 .f-txt>p{
     display: flex;gap: 1vw;
