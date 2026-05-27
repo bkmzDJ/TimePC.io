@@ -5,11 +5,14 @@
 :root{
   --p-head: 15vh;
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   font-family: "Ops";
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 1.88vw;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -18,7 +21,7 @@
 body {
   background-color: black;
 }
-header {
+.index-head {
   display: flex;
   justify-content: space-between;
   height: 9vh;
@@ -92,13 +95,18 @@ nav {
   display: block;
 }
 .h{
-  font-size: 9vh;
+  font-size: 45px;
   text-shadow: 0 0 4vh #EA00FF;
-
+  font-weight: bolder;
 }
 .b-h{
-  font-size: 7vh;
+  font-size: 33px;
   text-shadow: 0 0 4vh #ffffff;
+}
+.acc{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
 }
 .cont1 {
   display: flex;
@@ -233,7 +241,7 @@ footer>hr{
 .card_catalog{
   display: flex;
   background: linear-gradient(#00010C, #333333);
-  height: 100vh;
+  min-height: 100vh;
   padding:4vh 4vw ;
   gap: 2vw;
 }
@@ -251,7 +259,7 @@ footer>hr{
   flex-direction: column;
   background: linear-gradient(#171717, #140016);
   border-radius: 1vh;
-  padding: 6vh;
+  padding: 3vh;
   align-items: center;
   justify-content: center;
   gap: 2vh;
@@ -266,14 +274,16 @@ footer>hr{
 .info_card{
   background: linear-gradient(#171717, #140016);
   padding: 2vh;border-radius: 1vh;
-  height: 85vh;
 }
 .info_card>p{
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  font-size: 4vh;
+  font-size: 25px;
   text-shadow: 0 0 2vh #ffffff;
+}
+.info_card hr{
+  margin:2vh 0;
 }
 .add-cr{
   background-color: #fff;
@@ -285,5 +295,123 @@ footer>hr{
   transition: .2s ease-in-out;
 }
 .add-cr:hover{
-  box-shadow: 0 0 3vh #fff;
+  box-shadow: 0 0 2vh #fff;
+}
+/* account */
+.acc-main{
+  background: linear-gradient(#00010C, #333333);
+  min-height: 100vh;
+  padding: 7vh;
+}
+.avatar{
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.avatarbox{
+  position: relative;
+}
+#redaction_ava{
+  top: 2vh;
+  width: 5vh;
+  position: absolute;
+}
+.info-acc{
+  display: flex;
+  flex-direction: column;
+}
+.account-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-head>p{
+  text-align: right;
+  font-weight: bold;
+}
+.user{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.c-user{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
+}
+.item-user{
+  background-color: #1B1B1B;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding: 1vh;
+  border-radius: 1vh;
+}
+.user-inf{
+  display: flex;
+  gap: 2vw;
+  margin-top: 4vh;
+}
+.item-user>img{
+  width: 5vh;
+  height: 4vh;
+}
+.c-user button{
+  background-color: #1B1B1B;
+  width: 100%;
+  border-radius: 1vh;
+  border: none;
+  padding: 1vh;
+}
+.user-info{
+  padding: 2vh;
+  border-radius: 1vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60vh;
+  width: 40vw;
+}
+.logout{
+  color: rgb(211, 0, 0);
+}
+.i2{
+  width: 50vw;
+}
+.i2>.item-user{
+  width: 100%;
+  font-size: 4vh;
+}
+.scroll{
+  overflow-y: scroll;
+  width: 100%;
+  height: 45vh;
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+.scroll::-webkit-scrollbar{
+  display: none;
+}
+.product{
+  padding: 2vh;
+  border-radius: 1vh;
+  background-color: #1B1B1B;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  position: relative;
+}
+.card-img{
+  width: 20%;
+}
+.status{
+  position: absolute;
+  width: 4vh;
+  right: 1vw;
 }
