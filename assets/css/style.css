@@ -185,19 +185,19 @@ footer>hr{
   
 }
 .grid-cat{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: 1fr 1fr/repeat(4, 20%);
+  gap: 3vh;
   align-items: center;
-
-  height: 60vh;
+  justify-content: space-between;
 }
 .c-item img{
   width: 100%;
   height: 100%;
 }
 .c-item{
-  width: 25%;
-  height: 20%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,7 +210,7 @@ footer>hr{
   justify-content: center;
 }
 .c-item>a>span{
-  font-size: 80%;
+  font-size: 60%;
   background-color: #ea00ff4b;
   border-radius: 2vh;
   box-shadow: 0 0 5vh #ea00ffab;
