@@ -495,3 +495,40 @@ footer > hr {
 .basket-block::-webkit-scrollbar{
   display: none;
 }
+/* О нас */
+.index-info{
+  backdrop-filter: blur(2vh);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;padding-top: 10vh;
+}
+.background{
+  background-image: url(../img/info_img/image\ 1.png);
+}
+.line{
+  width: 20vw;
+  margin: 0vh 0vh 5vh;
+  border: 0.2vh solid #fff;
+}
+.grid-text{
+  display: grid;
+  grid-template: 45vh 45vh/45vw 45vw;
+  font-size: 2.4vw;
+  padding: 2vh;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+.grid-text>p:nth-child(1){
+  text-align: right;
+}
+.im1{
+  width: 100%;
+  height: 100%;
+}
+.im2{
+  width: 100%;
+  height: 100%;
+}
