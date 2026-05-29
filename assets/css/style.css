@@ -232,7 +232,9 @@ footer > hr {
     gap: 4vh;
     padding: 3vh 2vw;
   }
-
+  #logoa > img {
+    width: 12vh;
+  }
   .in > img {
     width: 100%;
   }
@@ -439,6 +441,66 @@ footer > hr {
 }
 .c-r {
   gap: 4vh;
+}
+/* Адаптив каталога */
+@media (max-width: 1024px) {
+  .catalog {
+    padding-top: 12vh;
+    gap: 3vh;
+  }
+  .grid-cat {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+  }
+  .c-item > a > span {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    gap: 3vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-cat {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .c-item img {
+    max-height: 25vh;
+    width: auto;
+    max-width: 100%;
+  }
+  .c-item > a > span {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    padding-top: 20vh;
+    gap: 2vh;
+  }
+  .grid-cat {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+    width: 95%;
+  }
+  .c-item img {
+    max-height: 18vh;
+  }
+  .c-item > a > span {
+    font-size: 90%;
+    width: 100%;
+  }
 }
 /* CARD */
 .card_catalog {
